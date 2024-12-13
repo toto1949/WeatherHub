@@ -1,0 +1,14 @@
+# CocoaPods
+Pods/
+Podfile.lock
+
+# macOS files
+.DS_Store
+
+# Build artifacts
+build/
+DerivedData/
+
+# Xcode specific
+xcuserdata/
+*.xcuserstate
