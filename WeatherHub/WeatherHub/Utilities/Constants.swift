@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - API
 enum Constants {
-    static let apiKey = "b463f047a06f460ab08155944241312"
+    static let apiKey = "YOUR_API_KEY"
     static let baseURL = "https://api.weatherapi.com/v1"
     
     

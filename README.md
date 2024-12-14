@@ -27,6 +27,16 @@ WeatherHub is an iOS app built to track weather for a single saved city. It demo
 - **Architecture**: MVVM
 - **Local Storage**: UserDefaults
 - **API**: [WeatherAPI.com](https://www.weatherapi.com/docs/)
+- **Reactive Programming**: Combine
+  - Handles asynchronous data streams
+  - Manages network requests
+  - Implements data binding
+- **Design Principles**: SOLID
+  - **Single Responsibility**: Each class handles one specific responsibility
+  - **Open/Closed**: Components are open for extension but closed for modification
+  - **Liskov Substitution**: Objects are replaceable with their subtypes
+  - **Interface Segregation**: Clients aren't forced to depend on interfaces they don't use
+  - **Dependency Inversion**: High-level modules don't depend on low-level modules
 
 ## Requirements
 - Xcode 14+
@@ -37,32 +47,28 @@ WeatherHub is an iOS app built to track weather for a single saved city. It demo
 <!--### Search Screen (With Saved City)
 <img src="screenshots/search-result.png" alt="Search Screen" width="500"/>-->
 
-### Home Screen 
-<img src="screenshots/search-result.png" alt="Home Screen (With Saved City)" width="250" height="450"/>
+## Screenshots
 
-<!--### Home Screen (No City)
-<img src="screenshots/na.png" alt="Home Screen (No City)" width="500"/>-->
+| Home Screen  |
+|--------------------------|
+| <img alt="test" src="screenshots/search-result.png" width="250"/> 
 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weatherhub.git
+   https://github.com/toto1949/WeatherHub.git
    cd weatherhub
    ```
-2. Install dependencies:
-   ```bash
-   pod install
-   ```
-3. Open the project in Xcode:
+2. Open the project in Xcode:
    ```bash
    open WeatherHub.xcworkspace
    ```
-4. Build and run the app on a simulator or device.
+3. Build and run the app on a simulator or device.
 
 ## API Integration
 WeatherHub integrates with the [WeatherAPI.com](https://www.weatherapi.com/docs/) to fetch real-time weather data. Make sure to configure your API key:
 1. Sign up for a free account on [WeatherAPI.com](https://www.weatherapi.com/).
-2. Add your API key in the `APIManager.swift` file:
+2. Add your API key in the `Constants.swift` file:
    ```swift
    let apiKey = "YOUR_API_KEY"
    ```
